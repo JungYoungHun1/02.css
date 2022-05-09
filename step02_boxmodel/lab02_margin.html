@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        /* .parent {
+            width: 400px;
+            height: 200px;
+            border: 3px solid black;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            border: 3px solid red; */
+            /* 위 우 아래 좌 */
+            /* margin: 10px 20px 30px 40px; */
+            /* 위 좌우 아래 */
+            /* margin: 10px 20px 40px; */
+            /* 위아래 좌우 */
+            /* margin: 10px 40px; */
+            /* 위아래좌우 */
+            /* margin: 10px; */
+
+        /* } */
+        .parent2 {
+            width: 300px;
+            height: 200px;
+            background-color: gold;
+  
+        }
+        .child2 {
+            width: 100px;
+            height: 100px;
+            border: 3px solid red;
+            margin-top: 200px;
+            /* css reset */
+            /* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> */
+            /* 브라우저 임의의 마진 값을 없애줌 */
+            /* float: left; */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- margin : 요소의 외부 여백 -->
+    <!-- 단위, auto(브라우저가 너비를 계산)
+    %(부모요소의 너비에 대한 비율) -->
+    <!-- 방향 : top right bottom left -->
+
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+
+    <!-- /* 마진 중복 */
+    /* 형제 요소들의 margin top-bottom이 만났을때 */
+    /* 부모 요소의  margin-top과 자식 요소의 top이 만났을때 */
+    /* 부모 요소의  margin-bottom과 자식 요소의 bottom이 만났을때 */ -->
+    <div class="parent2">
+        <div class="child2"></div>
+        <div class="child2"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>

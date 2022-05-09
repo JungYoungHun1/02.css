@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab03_font</title>
+    <style>
+        /* font style */
+        p{
+            font-style: italic;
+            /* 400이 default */
+            font-weight: 900;
+        }
+        /* div{
+            font-size: 50px;
+        } */
+        body *{
+            border: 2px solid;
+            font-size: 16px;
+        }
+        .container{
+            /* width: 200px; */
+            font-size: 10px;
+            /* em은 자기자신의 폰트크기를 표준으로 잡음 */
+            width: 20em;
+        }
+        .parent{
+            /* width: 100px; */
+            /* width: 50%; */
+            /* %는 부모 요소의 단위에 영향 */
+            width: 10em;
+            font-size: 10px;
+        }
+        .child{
+            /* width: 50px; */
+            /* rem - 최상위 root의 폰트 사이즈를 기준으로 */
+            width: 5rem;
+        }
+        html {
+            font-size: 10px;
+            font: bold 10px;
+        }
+        /* vw, vh */
+        /* vw - 화면 기준 넓이 */
+        /* vh - 화면 기준 높이 */
+        .container2 {
+            width: 50vw;
+            height: 50vh;
+        }
+
+        /* .line-height */
+        .line {
+            line-height: 2;
+        }
+
+        /* color */
+        .color {
+            color: rgb(255, 0, 0);
+            color: #FF0000;
+        }
+        .family {
+            font-family: fantasy;
+        }
+        /* text_align */
+        /* justify - 양쪽맞춤값 */
+        .align {
+            text-align: justify;
+        }
+
+        /* text-decoration */
+        .deco {
+            text-decoration: line-through;
+        }
+        /* text_indent */
+        /* 첫째줄 들여쓰기 */
+        .indent{
+            text-indent: 10px;
+        }
+        .css{
+            text-indent: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <!-- font style -->
+    <!-- <p>폰트 스타일입니다</p> -->
+    <!-- font weight -->
+    <!-- <p>폰트 웨이트입니다</p> -->
+    <!-- font size -->
+    <!-- px, cm, %, em -->
+    <!-- 16px이 default -->
+    <!-- <div>폰트 사이즈입니다</div> -->
+
+    <!-- 단위 디테일 -->
+    <!-- <div class="container">컨테이너
+        <div class="parent">부모
+            <div class="child">자식1</div>
+            <div class="child">자식2</div>
+        </div>
+    </div> -->
+
+    <!-- vw, vh -->
+    <!-- <div class="container2"></div> -->
+
+    <!-- line-height -->
+    <!-- <div class="line">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et debitis laborum voluptate mollitia tenetur odio excepturi nulla error quam. Asperiores, non. Nemo provident illo soluta fuga ullam ipsum ad excepturi.</div> -->
+
+    <!-- color -->
+    <!-- <div class="color">폰트 컬러입니다</div> -->
+
+    <!-- font family -->
+    <!-- :[글꼴 후보1, 2 ..., 글꼴 계열] -->
+    <!-- serif : 바탕체
+    sans-serif : 고딕체
+    monospace : 가로폭 동등한 고정 너비
+    cursive : 필기체
+    fantasy : 재미있는 글꼴 계열 -->
+    <!-- <div class="family">Hello, CSS</div> -->
+    <!-- text-align -->
+    <!-- <div class="align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate odit dolorem qui, minus porro fuga consectetur sapiente ullam doloribus. Libero fuga accusantium facilis nam voluptatibus facere repellat reiciendis praesentium. Odio? -->
+    <!-- </div> -->
+
+    <!-- text-decoration -->
+    <div class="deco">
+        Hello, CSS
+    </div>
+
+    <!-- text-indent(들여쓰기) -->
+    <div class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor nemo magnam doloremque voluptatibus fuga accusantium iure, eos ad velit architecto sit facilis aperiam officia et praesentium placeat amet nesciunt?</div>
+    <div class="css">css3</div>
+</body>
+</html>

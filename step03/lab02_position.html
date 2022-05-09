@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 300px;
+            height: 400px;
+            border: 3px solid black;
+            position: static;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 3px solid gray;
+            position: relative;
+
+            top: 50px;
+            left: 50px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 3px dashed gray;
+        }
+        .relative {
+            position: relative;
+            left: 300px;
+            bottom: 100px;
+        }
+        .grand {
+            width: 600px;
+            height: 500px;
+            border: 3px solid blue;
+            padding: 20px;
+            /* position: relative; */
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+        /* fixed */
+        .fixed {
+            position: fixed;
+            top: 50px;
+            right: 50px;
+        }
+      
+    </style>
+</head>
+<body>
+    <!-- position : 요소의 위치 지점 기준 설정 -->
+    <!-- static : 기준이 없는 값(배치 불가능, 기본값) -->
+    <!-- relative : 요소 자기 자신  -->
+    <!-- absolute : (위치상) 부모 요소 기준 static이 아닌 부모 기준 (static밖에 없다면 가장 최상위 body)-->
+    <!-- fixed : 브라우저 기준 -->
+    <!-- sticky : 스크롤 영역 기준 -->
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div> -->
+
+    <!-- relative -->
+    <!-- <div class="box">1</div> -->
+    <!-- <div class="box relative">2</div>
+    <div class="box">3</div> -->
+
+    <!-- absolute -->
+    <div class="grand">
+        <div class="parent">
+            <div class="box">1</div>
+            <div class="box absolute">2</div>
+            <div class="box fixed">3</div>
+        </div>
+    </div>
+</body>
+</html>

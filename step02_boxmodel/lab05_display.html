@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background: gold;
+            display: block;
+        }
+        /* inline 요소를 block 요소로 사용할 수 있다 */
+        input {
+            width: 100px;
+            height: 50px;
+            margin: 50px 0px;
+            display: inline-block;
+        }
+        input:nth-child(3){
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- display : 요소의 박스 타입 결정 -->
+    <!-- block, inline -->
+    <!-- inline-block -->
+    <!-- none  -->
+    <span></span>
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <input type="text" value="3">
+
+</body>
+</html>
